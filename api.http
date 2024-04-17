@@ -1,0 +1,27 @@
+POST http://localhost:3333/tasks
+
+{
+    "title": "Task 2",
+    "description": "Task 2 description"
+}
+
+###
+
+GET http://localhost:3333/tasks?search=
+
+###
+
+PUT http://localhost:3333/tasks/b15567db-25e0-45ff-b060-5b1536e5d9ca
+
+{
+    "title": "Task 1",
+    "description": "Task 1 description"
+}
+
+###
+
+DELETE http://localhost:3333/tasks/b15567db-25e0-45ff-b060-5b1536e5d9ca
+
+###
+
+PATCH http://localhost:3333/tasks/b15567db-25e0-45ff-b060-5b1536e5d9ca/complete
