@@ -11,6 +11,10 @@ export const routes = [
         handler: (req, res) => {
             const { title, description } = req.body
 
+            if (!title || !description) {
+                return res.writeHead(404).end('Título e descrição são obrigatórios')
+            }
+
             const task = database.insert('tasks', {
                 id: randomUUID(),
                 title,
@@ -49,6 +53,10 @@ export const routes = [
 
             if (!id) {
                 return res.writeHead(404).end('ID é obrigatório')
+            }
+
+            if (!title || !description) {
+                return res.writeHead(404).end('Título e descrição são obrigatórios')
             }
 
             const task = database.select('tasks', null, id)
