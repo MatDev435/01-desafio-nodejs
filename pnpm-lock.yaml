@@ -1,0 +1,38 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  csv:
+    specifier: ^6.3.8
+    version: 6.3.8
+
+packages:
+
+  /csv-generate@4.4.0:
+    resolution: {integrity: sha512-geM01acNPZ0wr4/9sKev5fCzFG/tsc/NbuFWrhLc47M1zQyUdEJH65+cxTLIVafEwhBjIYwQ7fdOL9roBqVltQ==}
+    dev: false
+
+  /csv-parse@5.5.5:
+    resolution: {integrity: sha512-erCk7tyU3yLWAhk6wvKxnyPtftuy/6Ak622gOO7BCJ05+TYffnPCJF905wmOQm+BpkX54OdAl8pveJwUdpnCXQ==}
+    dev: false
+
+  /csv-stringify@6.4.6:
+    resolution: {integrity: sha512-h2V2XZ3uOTLilF5dPIptgUfN/o2ia/80Ie0Lly18LAnw5s8Eb7kt8rfxSUy24AztJZas9f6DPZpVlzDUtFt/ag==}
+    dev: false
+
+  /csv@6.3.8:
+    resolution: {integrity: sha512-gRh3yiT9bHBA5ka2yOpyFqAVu/ZpwWzajMUR/es0ljevAE88WyHBuMUy7jzd2o5j6LYQesEO/AyhbQ9BhbDXUA==}
+    engines: {node: '>= 0.1.90'}
+    dependencies:
+      csv-generate: 4.4.0
+      csv-parse: 5.5.5
+      csv-stringify: 6.4.6
+      stream-transform: 3.3.1
+    dev: false
+
+  /stream-transform@3.3.1:
+    resolution: {integrity: sha512-BL8pv9QL8Ikd11oZwlRDp1qYMhGR0i50zI9ltoijKGc4ubQWal/Rc4p6SYJp1TBOGpE0uAGchwbxOZ1ycwTuqQ==}
+    dev: false

@@ -31,10 +31,10 @@ export const routes = [
             const { search } = req.query
 
             const tasks = database.select('tasks', search && {
-                title,
-                description,
+                title: search,
+                description: search,
                 updated_at: new Date()
-            })
+            }, null)
 
             return res.end(JSON.stringify(tasks))
         }
